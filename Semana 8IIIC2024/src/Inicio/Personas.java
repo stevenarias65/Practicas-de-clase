@@ -14,6 +14,33 @@ public class Personas {
     private String apellidos;
     private String cedula;
     private String telefono;
+    private int rol;
+    private String pass;
+
+    public Personas(String nombre, String apellidos, String cedula, String telefono, int rol, String pass) {
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.cedula = cedula;
+        this.telefono = telefono;
+        this.rol = rol;
+        this.pass = pass;
+    }
+
+    public String getPass() {
+        return pass;
+    }
+
+    public void setPass(String pass) {
+        this.pass = pass;
+    }
+    
+    public int getRol() {
+        return rol;
+    }
+
+    public void setRol(int rol) {
+        this.rol = rol;
+    }
 
     public String getNombre() {
         return nombre;
